@@ -1,0 +1,4 @@
+<?php
+/* Bootstrap modal partial: catModal */
+?>
+<div class="modal fade" id="catModal"><div class="modal-dialog"><form class="modal-content" method="post"><?=csrfField()?><input type="hidden" name="action" value="create_category" id="cat_action"><input type="hidden" name="id" id="cat_id"><div class="modal-header"><h5 class="modal-title" id="catTitle">Add Category</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><label class="form-label">Name</label><input class="form-control mb-3" name="name" id="cat_name" required><label class="form-label">Description</label><textarea class="form-control" name="description" id="cat_desc"></textarea></div><div class="modal-footer"><button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button><button class="btn btn-primary">Save</button></div></form></div></div>
