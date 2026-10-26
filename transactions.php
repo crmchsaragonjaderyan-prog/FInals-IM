@@ -1,4 +1,11 @@
+
 <?php
-// The TCL demonstration is integrated into the real IT Lab inventory workflow.
+session_start();
+
+if (empty($_SESSION['user_id'])) {
+    header('Location: index.php?page=login');
+    exit;
+}
+
 header('Location: index.php?page=transactions');
 exit;
